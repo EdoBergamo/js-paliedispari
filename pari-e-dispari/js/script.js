@@ -29,3 +29,4 @@ const numeroPlayer = prompt("Inserisci un numero")
 
 const result = evenOdd(sceltaPlayer, numeroPlayer)
 console.log(result)
+document.write(result)
