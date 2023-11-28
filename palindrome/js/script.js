@@ -1,9 +1,17 @@
 function isPalindroma(word) {
     word = word.toLowerCase();
 
-    let inverted_word = word.split('').reverse().join('');
+    
+    let newWord = '';
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] !== ' ') {
+            newWord += word[i];
+        }
+    }
+    
+    let inverted_word = newWord.split('').reverse().join('');
 
-    if (word === inverted_word) {
+    if (newWord === inverted_word) {
         return true;
     } else {
         return false;
